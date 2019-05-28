@@ -1,0 +1,21 @@
+body{
+  background: yellow;
+}
+div{
+  border:solid black 5px;
+  padding: 100px;
+  display:inline-block;
+}
+.roundRect{
+  padding-left: 200px;
+  border-radius: 10px;
+  margin-right: 50px;
+}
+.elipse{
+  padding-left: 200px;
+  border-radius: 100%;
+}
+.circle{
+  border-radius: 100px 100px 0 0;
+  background: red;
+}
