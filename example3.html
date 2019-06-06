@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function myFun()
+      {
+      str=document.getElementById("exp").value
+      document.getElementById("rslt").innerHTML=eval(str)
+    }
+    function expPrint(obj){
+      document.getElementById("exp").value+=obj.innerHTML
+    }
+    </script>
+  </head>
+  <body>
+<!--comment-->
+  <input type="text" id="exp" disabled="disabled" >
+
+<button type="button" onclick="expPrint(this)">1</button>
+<button type="button" onclick="expPrint(this)">2</button>
+<button type="button" onclick="expPrint(this)">+</button>
+  <button type="button" onclick="myFun()">=</button><span id="rslt"></span>
+  </body>
+</html>
