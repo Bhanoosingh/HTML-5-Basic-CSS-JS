@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .box{
+        border:1px solid green;
+        display:inline-block;
+        padding:30px 50px;
+        border-radius:8px;
+        margin:0 300px;
+        background:green;
+        color:white;
+        transition:2s;
+        -MS-animation:myanimation 4s infinite alternate;/*,swing 1s infinite alternate;*/
+        /*animation:swing 2s infinite alternate;*/
+      }
+      .box:hover
+      {
+        transform:rotate(180deg)
+      }
+      @keyframes myanimation
+      {
+        0%{
+          background:red;
+          position:relative;
+          top:0px;
+        }
+        50%{
+          transform:rotate(360deg)
+        }
+        100%{
+          background:yellow;
+          position:relative;
+          top:500px;
+        }
+      }
+      @keyframes swing
+      {
+        from{
+          transform:rotate(10deg)
+        }
+        to{
+          transform:rotate(-10deg)
+        }
+      }
+      span{
+        display:inline-block;
+        margin:20px 300px;
+        position:absolute;
+        z-index:999;
+      }
+    </style>
+  </head>
+  <body>
+
+<span>Hello</span>
+
+    <div class="box">
+      CSS
+    </div>
+
+  </body>
+</html>
